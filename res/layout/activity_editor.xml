@@ -1,0 +1,71 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black2"
+    android:clickable="true"
+    android:columnCount="1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <com.ms.utils.WaveformView
+        android:id="@+id/waveform"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:layout_column="0"
+        android:layout_row="5"
+         />
+
+    <FrameLayout
+        android:layout_width="900dp"
+        android:layout_height="183dp"
+        android:layout_gravity="fill_horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load" />
+
+        <ImageButton
+            android:id="@+id/play"
+            style="@android:style/MediaButton"
+            android:layout_width="71dip"
+            android:layout_height="52dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="6dip"
+            android:contentDescription="@string/play"
+            android:src="@android:drawable/ic_media_play" />
+
+    </FrameLayout>
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:enabled="false" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_row="0"
+        android:checked="false"
+        android:enabled="false" />
+
+     <RadioButton
+         android:id="@+id/radioButton3"
+         android:layout_column="0"
+         android:layout_gravity="center"
+         android:layout_marginLeft="80dp"
+         android:layout_row="0"
+         android:checked="true" />
+
+</GridLayout>

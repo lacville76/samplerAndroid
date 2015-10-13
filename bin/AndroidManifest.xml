@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ms.activities"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+  <uses-permission android:name="android.permission.INTERNET" /> 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.ms.activities.SequencerActivity"
+            android:label="@string/app_name" 
+              android:configChanges="orientation"   
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ms.activities.LibraryActivity"      
+             android:label="@string/title_activity_library" 
+              android:configChanges="orientation"   
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.ms.activities.EditActivity"
+            android:label="@string/title_activity_editor" 
+              android:configChanges="orientation"   
+            android:screenOrientation="landscape">
+          <intent-filter android:label="@string/edit_intent">
+                <action android:name="android.intent.action.EDIT" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.ms.activities.TrackSelectActivity"        
+            android:label="@string/title_activity_track_select"
+              android:configChanges="orientation"   
+            android:screenOrientation="landscape" >
+        </activity>
+          <activity android:name="com.ms.activities.SelectActivity"
+                  android:label="@string/main_activity_label">
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+               </activity>
+    </application>
+
+</manifest>

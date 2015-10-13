@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/Downloads.iml" filepath="$USER_HOME$/Downloads/Downloads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sampler.iml" filepath="$PROJECT_DIR$/Sampler.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/SeekArc-master/SeekArc-master.iml" filepath="$USER_HOME$/Downloads/SeekArc-master/SeekArc-master.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/SeekArc-master/SeekArc_library/SeekArc_library.iml" filepath="$USER_HOME$/Downloads/SeekArc-master/SeekArc_library/SeekArc_library.iml" />
+      <module fileurl="file://$USER_HOME$/wojtekb.iml" filepath="$USER_HOME$/wojtekb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../workspace.iml" filepath="$PROJECT_DIR$/../workspace.iml" />
+    </modules>
+  </component>
+</project>
+
